@@ -1,0 +1,39 @@
+{
+    "name": "songxuan/test",
+    "description": "composer包制作测试",
+    "type": "library",
+    "license": [
+        "Apache-2.0"
+    ],
+    "keywords": [
+        "composer",
+        "测试"
+    ],
+    "authors": [
+        {
+            "name": "songxuan",
+            "email": "1668325326@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "require-dev": {
+        "topthink/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lala\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "crontab": "src/config.php"
+            },
+            "services": [
+                "Fairy\\Service"
+            ]
+        }
+    }
+}
